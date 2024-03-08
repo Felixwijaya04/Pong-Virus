@@ -957,7 +957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e99338e68425249831e80a7157d703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 755787606}
   ball: {fileID: 991534899}
   agroRange: 7.5
   movementSpeed: 6
@@ -975,7 +974,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1003,7 +1002,7 @@ GameObject:
   - component: {fileID: 991534898}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
