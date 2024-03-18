@@ -30,4 +30,9 @@ public class BallScript : MonoBehaviour
             rb.velocity = vel;
         }
     }
+
+    void StartTimer()
+    {
+        Time.timeScale = 0f;
+    }
 }
