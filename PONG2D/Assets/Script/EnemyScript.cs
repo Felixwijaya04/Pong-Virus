@@ -17,6 +17,7 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
         dist = Vector2.Distance(ball.position, rb.position);
+        /*dist = ball.position.y - rb.position.y;*/
         print(dist);
         if (dist < agroRange)
         {
