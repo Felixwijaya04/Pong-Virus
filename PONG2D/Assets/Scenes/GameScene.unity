@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sm: {fileID: 2101306058}
+  ball: {fileID: 991534895}
 --- !u!61 &434863974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13878,7 +13879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 991534899}
-  agroRange: 8
+  agroRange: 8.5
   movementSpeed: 6.5
 --- !u!50 &755787606
 Rigidbody2D:
@@ -13895,7 +13896,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 1
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -14146,7 +14147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111, y: 162}
+  m_AnchoredPosition: {x: 112, y: 162}
   m_SizeDelta: {x: 54.1615, y: 60.4607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1618948508
@@ -14183,7 +14184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: 162}
+  m_AnchoredPosition: {x: -114, y: 162}
   m_SizeDelta: {x: 54.1615, y: 60.4607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1618948510
@@ -14372,6 +14373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sm: {fileID: 2101306058}
+  ball: {fileID: 991534895}
 --- !u!1 &1676415581
 GameObject:
   m_ObjectHideFlags: 0
