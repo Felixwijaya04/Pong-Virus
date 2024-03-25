@@ -9,15 +9,7 @@ public class BallScript : MonoBehaviour
     private float arahX;
     void Start()
     {
-        arahX = Random.Range(0, 2);
-        if (arahX < 1)
-        {
-            rb.velocity = new Vector2(- force, 0);
-        }
-        else
-        {
-            rb.velocity = new Vector2(force, 0);
-        }
+        Invoke("firstGame", 1.5f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,8 +23,16 @@ public class BallScript : MonoBehaviour
         }
     }
 
-    void StartTimer()
+    void firstGame()
     {
-        Time.timeScale = 0f;
+        arahX = Random.Range(0, 2);
+        if (arahX < 1)
+        {
+            rb.velocity = new Vector2(-force, 0);
+        }
+        else
+        {
+            rb.velocity = new Vector2(force, 0);
+        }
     }
 }
