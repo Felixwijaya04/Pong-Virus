@@ -16,7 +16,7 @@ public class rightGoal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            sm.rightWin(1);
+            sm.leftWin(1);
             ball.transform.position = ballPos;
         }
     }
