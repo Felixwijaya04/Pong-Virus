@@ -12,12 +12,12 @@ public class rightGoal : MonoBehaviour
     {
         ballPos = ball.transform.position;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        sm.rightWin(1);
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        ball.transform.position = ballPos;
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            sm.rightWin(1);
+            ball.transform.position = ballPos;
+        }
     }
 }

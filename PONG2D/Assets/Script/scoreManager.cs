@@ -11,10 +11,10 @@ public class scoreManager : MonoBehaviour
     [ContextMenu("increase")]
     public void leftWin(int score)
     {
-        scoreLeft.text += score.ToString();
+        scoreLeft.text = (int.Parse(scoreLeft.text) + score).ToString();
     }
     public void rightWin(int score)
     {
-        scoreRight.text += score.ToString();
+        scoreRight.text = (int.Parse(scoreRight.text) + score).ToString();
     }
 }
