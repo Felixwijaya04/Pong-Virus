@@ -57,6 +57,11 @@ public class UI_Manager : MonoBehaviour
     public void setScore(InputField value)
     {
         score = int.Parse(value.text);
+        if(score <= 0)
+        {
+            startMenu.SetActive(false);
+            EndTheGame();
+        }
     }
 
     public void EndTheGame()
