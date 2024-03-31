@@ -18,7 +18,7 @@ public class EnemyScript : MonoBehaviour
     {
         dist = Vector2.Distance(ball.position, rb.position);
         /*dist = ball.position.y - rb.position.y;*/
-        print(dist);
+        /*print(dist);*/
         if (dist < agroRange)
         {
             chase();

@@ -9,7 +9,9 @@ public class UI_Manager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject startMenu;
     public GameObject ball;
+    public GameObject gameOver;
 
+    public int score;
     private void Start()
     {
         startMenu.SetActive(true);
@@ -50,5 +52,16 @@ public class UI_Manager : MonoBehaviour
         startMenu.SetActive(false);
         ball.SetActive(true);
         Time.timeScale = 1f;
+    }
+
+    public void setScore(InputField value)
+    {
+        score = int.Parse(value.text);
+    }
+
+    public void EndTheGame()
+    {
+        gameOver.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
