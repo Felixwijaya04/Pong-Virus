@@ -15286,7 +15286,7 @@ GameObject:
   - component: {fileID: 755787602}
   - component: {fileID: 755787604}
   - component: {fileID: 755787606}
-  - component: {fileID: 755787605}
+  - component: {fileID: 755787607}
   m_Layer: 0
   m_Name: Slider right
   m_TagString: Racket
@@ -15406,21 +15406,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95386696, y: 2.1994717}
   m_EdgeRadius: 0
---- !u!114 &755787605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755787601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e99338e68425249831e80a7157d703, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 991534899}
-  agroRange: 18
-  movementSpeed: 5.6
 --- !u!50 &755787606
 Rigidbody2D:
   serializedVersion: 4
@@ -15435,8 +15420,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 1
-  m_GravityScale: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -15448,6 +15433,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &755787607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755787601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502bffecfd344f64f9a66b4cd868800f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 7
+  rb: {fileID: 755787606}
 --- !u!1 &759854719
 GameObject:
   m_ObjectHideFlags: 0
