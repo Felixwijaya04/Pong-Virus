@@ -33,7 +33,7 @@ public class UI_Manager : MonoBehaviour
 
     public void loadGame2()
     {
-        SceneManager.LoadScene("Game Scene 2");
+        SceneManager.LoadScene("GameScene2P");
         Time.timeScale = 1.0f;
     }
     public void loadMenu()
