@@ -31,6 +31,11 @@ public class UI_Manager : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
+    public void loadGame2()
+    {
+        SceneManager.LoadScene("Game Scene 2");
+        Time.timeScale = 1.0f;
+    }
     public void loadMenu()
     {
         SceneManager.LoadScene("Main Menu");
