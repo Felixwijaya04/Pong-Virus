@@ -11,6 +11,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject ball;
     public GameObject gameOver;
 
+    public AudioManager am;
     public int score;
     private void Start()
     {
@@ -20,7 +21,7 @@ public class UI_Manager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && startMenu.activeSelf == false)
         {
             pause();
         }
@@ -39,7 +40,7 @@ public class UI_Manager : MonoBehaviour
     public void loadMenu()
     {
         SceneManager.LoadScene("Main Menu");
-        
+        am.playBGM();
     }
     public void quitGame()
     {
