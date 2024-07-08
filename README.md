@@ -13,8 +13,8 @@ The game was built as a HTML file. Play the game from [Itch.io](https://felixde-
 ## 📂Files description
 
 ```
-├── Project-Valence-Main              # In this Folder, containing the Unity files and README file
-   ├── unityTG10                      # In this Folder, containing all the Unity project files, to be opened by a Unity Editor
+├── Pong-Virus-Main                   # In this Folder, containing the Unity files and README file
+   ├── PONG2D                         # In this Folder, containing all the Unity project files, to be opened by a Unity Editor
      ├── Assets                          #  In this Folder, it contains all our code, assets, scenes, etcwas not automatically created by Unity
         ├── ...
         ├── Scripts                      # In this folder, containing all the game codes
